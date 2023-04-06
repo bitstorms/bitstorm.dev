@@ -1,0 +1,88 @@
+:root {
+    --white: rgb(229, 229, 229);
+    --black: rgb(48, 48, 48);
+    --grey: rgb(66, 70, 75);
+    --lightgrey: rgb(102, 104, 108);
+    --brightgrey: rgb(186, 186, 186);
+}
+
+html {
+    font: 1.1em Calibri;
+    background: var(--black);
+}
+
+body {
+    background: var(--white);
+    max-width: 900px;
+    margin: auto;
+}
+
+main {
+    padding: 1em 2em;
+}
+
+
+/* Heading */
+
+#logo {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size:20px;
+    display: flex;
+    align-items: center;
+}
+
+#logo h1 {
+    margin: 0.5em;
+}
+
+#logo img {
+    height: 15%;
+    width: 15%;
+}
+
+header {
+    color: white;
+    padding: 1em;
+    background: var(--grey);
+}
+
+header nav {
+    background: var(--lightgrey);
+}
+
+header nav ul {
+    margin: 0;
+    display: flex;
+    align-self: center;
+    list-style: none;
+}
+
+header a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+header a:hover {
+    background: var(--black);
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background: var(--brightgrey);
+    padding: 1em 2em;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 0.5em;
+}

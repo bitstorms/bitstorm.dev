@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/home.png">
+    <meta name="author" content="bitstorm">
+    <meta name="description" content="This is my personal website. Have a look around!">
+    <meta name="theme-color" content="black">
+    <meta name="keywords" content="software, projects, personal, games, github, linux, html, css, js, node.js, tech, technology">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>{{title}}</title>
+</head>
+<header>
+    <div id="logo">
+        <img src="/assets/home.png">
+        <h1>bitstorm</h1>
+    </div>
+    
+    <nav>            
+        <ul>
+            <li>
+                <a href="/" class="nav-link">Home</a>
+            </li>
+            <li>
+                <a href="/blog" class="nav-link">Blog</a>
+            </li>
+            <li>
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            <li>
+                <a href="/about" class="nav-link">About</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        {{ content| safe }}
+    </main>
+</body>
+
+<footer>
+    <nav>
+        <a href='https://11ty.dev'>Made with Eleventy</a>
+        <a href='#'>Source code</a>
+        <a href='#'>Dark Theme</a>
+    </nav>
+</footer>
+</html>
