@@ -1,14 +1,33 @@
 :root {
-    --white: rgb(229, 229, 229);
-    --black: rgb(48, 48, 48);
+    --white: rgb(255, 255, 255);
+    --darkblack: rgb(49, 49, 49);
+    --black: rgb(34, 34, 34);
+    --yellow: rgb(255, 255, 0);
+    --darkgrey: rgb(78, 78, 78);
     --grey: rgb(66, 70, 75);
     --lightgrey: rgb(102, 104, 108);
     --brightgrey: rgb(186, 186, 186);
+    --blue: rgb(24, 126, 243);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, html, nav ul,nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
 }
 
 html {
-    font: 1.1em Calibri;
-    background: var(--black);
+    font: 1em/1.6 sans-serif;
+    background: var(--darkgrey);
 }
 
 body {
@@ -16,6 +35,8 @@ body {
     max-width: 900px;
     margin: auto;
 }
+
+
 
 main {
     padding: 1em 2em;
@@ -25,8 +46,7 @@ main {
 /* Heading */
 
 #logo {
-    margin: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     font-size:20px;
     display: flex;
     align-items: center;
@@ -42,7 +62,7 @@ main {
 }
 
 header {
-    color: white;
+    color: var(--white);
     padding: 1em;
     background: var(--grey);
 }
@@ -52,16 +72,13 @@ header nav {
 }
 
 header nav ul {
-    margin: 0;
     display: flex;
     align-self: center;
-    list-style: none;
 }
 
 header a {
     display: block;
-    color: white;
-    text-decoration: none;
+    color: var(--white);
     padding: 0.5em;
 }
 
@@ -69,10 +86,9 @@ header a:hover {
     background: var(--black);
 }
 
-
-
-
-
+.preview {
+    max-width: 300px;
+}
 
 
 /* Footer */
@@ -85,4 +101,23 @@ footer {
 footer a {
     text-decoration: none;
     padding: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: var(--darkblack);
+    }
+
+    body {
+        background: var(--black);
+        color: var(--white);
+    }
+
+    a {
+        color: var(--yellow);
+    }
+
+    footer {
+        background: var(--grey);
+    }
 }
