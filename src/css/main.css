@@ -1,6 +1,6 @@
 :root {
     --white: rgb(255, 255, 255);
-    --darkblack: rgb(49, 49, 49);
+    --darkblack: rgb(0, 0, 0);
     --black: rgb(34, 34, 34);
     --yellow: rgb(255, 255, 0);
     --darkgrey: rgb(78, 78, 78);
@@ -36,8 +36,6 @@ body {
     margin: auto;
 }
 
-
-
 main {
     padding: 1em 2em;
 }
@@ -52,13 +50,9 @@ main {
     align-items: center;
 }
 
-#logo h1 {
-    margin: 0.5em;
-}
-
 #logo img {
-    height: 15%;
-    width: 15%;
+    height: 10vh;
+    margin-right: 1em;
 }
 
 header {
@@ -87,8 +81,9 @@ header a:hover {
 }
 
 .preview {
-    max-width: 300px;
+    max-width: 50%;
 }
+
 
 
 /* Footer */
@@ -101,6 +96,13 @@ footer {
 footer a {
     text-decoration: none;
     padding: 0.5em;
+}
+
+
+@media (max-width: 650px) {
+    #logo img {
+        height: 8vh;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
